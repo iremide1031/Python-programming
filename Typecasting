@@ -1,0 +1,10 @@
+Age=15
+Weight=38.5
+print("before type casting")
+print("type of age",type(Age))
+print("type of weight",type (Weight))
+Age=str(Age)
+Weight=int(Weight)
+print("after type casting")
+print("type of age",type(Age))
+print("type of weight",type (Weight))
