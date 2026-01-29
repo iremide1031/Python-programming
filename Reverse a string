@@ -1,0 +1,3 @@
+text=input("ENTER A WORD:")
+reverse=text[::-1]
+print("reverse of the given word is",reverse)
