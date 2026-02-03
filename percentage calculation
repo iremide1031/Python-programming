@@ -1,0 +1,12 @@
+print("Enter marks obtained in 4 subjects: ")
+maths = int(input("maths :"))
+english = int(input("english :"))
+science = int(input("science :"))
+history = int(input("history :"))
+#Lets calculate the percentage of marks
+sum = maths+english+science+history
+print("sum of maths,english,science,history")
+
+perc = (sum/400)*100
+print(end="percentage mark= ")
+print(perc)
