@@ -1,0 +1,8 @@
+import calendar #inbuilt calender module
+
+# Year and month we want to show
+year = 2026
+month = 3  # 3 means march
+
+# Print the calender for that month
+print(calendar.month(year, month))
