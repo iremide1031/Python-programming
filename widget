@@ -1,0 +1,12 @@
+#  Import necessary librabries
+from tkinter import *
+
+# Create Window
+window = Tk()
+
+# Set the window Title and Geometry
+window.title ( 'Ire window')
+window.geometry('600x700')
+
+# Start the GUI event loop
+window.mainloop()
