@@ -1,0 +1,37 @@
+import random
+
+LOW, HIGH = 1,  100
+MAX_ATTEMPTS = 7
+
+
+
+DEMO_GUESSES = [50, 75, 63, 57, 60, 62, 61]
+
+print(f"Example random numbers:  {[random.randint(1, 10) for _ in range(5)]}")
+print()
+
+
+def check_guess(guess:  int,  secret: int)  -> str:
+    """Return feedback string for a single guess."""
+    if guess == secret:
+        return "Correct!"
+    elif guess  <  secret:
+        return f"{guess} is too LOW - try higher"
+    else:
+        return f"{guess} is too HIGH - try lower"
+
+
+def play_game(guesses: list[int]) -> None:
+    """Run one complete game using the provided list of guesses."""
+    random.seed(42)
+    secret = random.randint(LOW, HIGH)
+
+
+    print(f"I'm thinking of a number between {LOW} AND {HIGH}.")
+    print(f"You have {MAX_ATTEMPTS}  ATTEMPTS.\n")
+
+
+    won = False
+    for attempt, guess in enumerate(guesses[:MAX_ATTEMPTS], start=1):
+        feedback = check_guess(guess, secret)
+        print(f"Attempt {}")
